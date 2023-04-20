@@ -1,4 +1,5 @@
-int main () ; 
+#include <stdio.h>
+int main ()
 { 
- printf ("Programming is like building a multilingual puzzle\n")
+ puts("Programming is like building a multilingual puzzle\n");
  }  
