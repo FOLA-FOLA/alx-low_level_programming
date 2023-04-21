@@ -1,10 +1,10 @@
 #include <stdio.h>
 /**
- * Main - Contains puts method to print out required dummy text
+ * main - Contains puts method to print out required dummy text
  *
  * Description - This is really a short block of code
  * that prints out Some test text.
- * return - zero
+ * Return: zero
  */
 int main(void)
 {
