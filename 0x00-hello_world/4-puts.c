@@ -1,5 +1,5 @@
 #include <stdio.h>
-/*
+/**
  * Main - Contains puts method to print out required dummy text
  *
  * Description - This is really a short block of code
