@@ -13,7 +13,7 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	char last = "Last digit of";
+	char last[22]= "Last digit of";
 
 	if (n > 5)
 		printf("%s is %i and is greater than 5\n", last, n);
