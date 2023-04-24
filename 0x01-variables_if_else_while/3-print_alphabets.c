@@ -7,7 +7,10 @@
   */
 int main (void)
 {
-	for (char letr = "a"; letr <= "Z"; letr++)
+	char letr;
+	char lttr;
+
+	for (letr = "a"; letr <= "Z"; letr++)
 	{
 		putchar(letr);
 	}
@@ -15,4 +18,6 @@ int main (void)
 	{
 		putchar(lettr);
 	}
+	putchar("\n");
+	return (0);
 }
