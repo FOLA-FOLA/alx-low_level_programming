@@ -10,14 +10,14 @@ int main(void)
 	char letr;
 	char lttr;
 
-	for (letr = "a"; letr <= "Z"; letr++)
+	for (letr = 'a'; letr <= 'Z'; letr++)
 	{
 		putchar(letr);
 	}
-	for (char lttr = "A"; lttr <= "Z"; lttr++)
+	for (char lttr = 'A'; lttr <= 'Z'; lttr++)
 	{
-		putchar(lettr);
+		putchar(lttr);
 	}
-	putchar("\n");
+	putchar('\n');
 	return (0);
 }
