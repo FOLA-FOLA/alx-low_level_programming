@@ -14,7 +14,7 @@ int main(void)
 	{
 		putchar(letr);
 	}
-	for (char lttr = 'A'; lttr <= 'Z'; lttr++)
+	for (lttr = 'A'; lttr <= 'Z'; lttr++)
 	{
 		putchar(lttr);
 	}
