@@ -3,8 +3,8 @@
   * _islower - This function checks if a letter is lowercase
   * or uppercase.
   *
-  * int c - lettr whose case is to be examined
-  * int tmp : Temporary counter that increases
+  * @c: lettr whose case is to be examined
+  * @tmp: Temporary counter that increases
   * if letter is lowercase
   * char lett - To iterate over all letters of the alphabet
   * int c - letter whose case is to be examined
