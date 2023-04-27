@@ -10,17 +10,16 @@
 int _isupper(int c)
 {
 	char i;
+	int tmp = 0;
 
 	for (i = 'A'; i <= 'Z'; i++)
 	{
 		if (i == c)
-		{
-			return (1);
-		}
-		else
-		{
-			return (0);
-		}
+			tmp += 1;
 	}
+	if (tmp > 0)
+		return (1);
+	else
+		return (0);
 	_putchar('\n');
 }
