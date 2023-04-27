@@ -18,9 +18,9 @@ int _isdigit(int c)
 		if (i == c)
 			tmp += 1;
 	}
+	_putchar('\n');
 	if (tmp > 0)
 		return (1);
 	else
 		return (0);
-	_putchar('\n');
 }
