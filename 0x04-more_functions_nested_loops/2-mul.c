@@ -9,9 +9,13 @@
  */
 int mul(int a, int b)
 {
-	int m = a * b;
+	int  m = a * b;
+	int t;
 
-	_putchar(m);
+	for (t = 0; t <= 5; t++)
+	{
+		_putchar(m[t]);
+	}
 	_putchar('\n');
 	return (0);
 }
