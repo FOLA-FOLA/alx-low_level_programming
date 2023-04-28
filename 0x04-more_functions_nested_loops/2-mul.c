@@ -12,10 +12,27 @@ int mul(int a, int b)
 	int  m = a * b;
 	int t;
 
-	for (t = 0; t <= 5; t++)
+	if (m < 9)
 	{
-		_putchar(m[t]);
+		_putchar(m);
 	}
-	_putchar('\n');
+	else if (m > 9 && m < 100)
+	{
+		_putchar((m / 10) - ((m % 10) * 0.1));
+		_putchar(m % 100);
+	}
+	else if (m > 99 && m < 1000)
+	{
+		_putchar((m / 100) - ((m % 100) * 0.01));
+		_putchar((m % 100) - ((m % 10) * 0.1));
+		_putchar(m % 10);
+	}
+	else
+	{
+		_putchar((m / 1000) - ((m % 1000) * 0.001));
+		_putchar((m % 1000) - ((m % 100) * 0.01));
+		_putchar((m % 100) - ((m % 10) * 0.1));
+		_putchar(m % 10);
+	}
 	return (0);
 }
