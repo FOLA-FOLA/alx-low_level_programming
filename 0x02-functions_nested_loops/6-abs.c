@@ -9,7 +9,6 @@
 int _abs(int a)
 {
 	int k = a;
-	int ab;
 
 	if (k < 0)
 	{
