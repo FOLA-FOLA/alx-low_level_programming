@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
- * main - Print all single digit base 10 number
+ * main - This function prints all the single digit base 10
+ * followed by a new line
  *
  * Return: 0
  */
@@ -10,8 +11,7 @@ int main(void)
 
 	for (i = 48; i <= 57; i++)
 	{
-		putchar(i);
+		putchar(48);
 	}
 	putchar('\n');
-	return (0);
 }
