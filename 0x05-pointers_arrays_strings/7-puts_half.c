@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * puts_half - This function should print the
+ * puts_char - This function should print the
  * second half of a string.
  *
  * @str: This is the string to be used.
@@ -18,6 +18,6 @@ void puts_char(char *str)
 	}
 	for (tmp = len / 2; tmp >= len - 1; tmp++)
 	{
-		_putchar(*str[tmp]);
+		_putchar(*str);
 	}
 }
