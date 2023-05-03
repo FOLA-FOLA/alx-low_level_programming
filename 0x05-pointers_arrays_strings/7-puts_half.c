@@ -7,7 +7,7 @@
  *
  * Return: VOID
  */
-void puts_half(char *str)	
+void puts_half(char *str)
 {
 	int len = 0;
 	int tmp;
@@ -18,6 +18,6 @@ void puts_half(char *str)
 	}
 	for (tmp = len / 2; tmp >= len - 1; tmp++)
 	{
-		_putchar(*str);
+		_putchar(str[tmp]);
 	}
 }
