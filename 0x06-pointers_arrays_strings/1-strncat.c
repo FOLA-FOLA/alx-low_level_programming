@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strncat - concatenated two strings up to the 
+ * _strncat - concatenated two strings up to the
  * nth character
  *
  * @src: string to be concatenated
@@ -10,7 +10,7 @@
  *
  * Return: @dest, the newly concatenated string.
  */
-char *_strncat(char *dest, char *_src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int i = 0;
 	int j = 0;
@@ -26,4 +26,5 @@ char *_strncat(char *dest, char *_src, int n)
 		j++;
 	}
 	dest[i] = '\0';
+	return (dest);
 }
