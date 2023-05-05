@@ -4,7 +4,7 @@
  *
  * @dest: This is the destination string
  * @src: This is the source string.
- * @n: The size of string. 
+ * @n: The size of string.
  *
  * Return: String copied
  */
