@@ -1,30 +1,27 @@
 #include "main.h"
 /**
- * _strncat - concatenated two strings up to the
- * nth character
+ * *_strncat - This function concatenates two strings.
  *
- * @src: string to be concatenated
- * @dest: string to be concatenated to.
- * @n: concatenation should stop at the nth
- * character of src.
+ * @dest: This is the first string to be concatenated.
+ * @src: This is the 2nd string to be concatenated.
+ * @n: Number at which string should be terminated.
  *
- * Return: @dest, the newly concatenated string.
+ * Return: A car/ A pointer to the concatenated string.
  */
-char *_strncat(char *dest, char *src, int n)
+char *_strcat(char *dest, char *src, int n)
 {
 	int i = 0;
-	int j = 0;
+	int j;
 
-	while (*src != '\0')
+	while (*dest != '\0')
 	{
 		i += 1;
 	}
-	while (j < n && src[j] != '\0')
+
+	for (j = 0; j < n && src[j] != '\0'; i++)
 	{
-		dest[i] = src[j];
-		i++;
-		j++;
+		dest[i + j] = src[i];
+		dest[i + j] = '\0';
 	}
-	dest[i] = '\0';
 	return (dest);
 }
