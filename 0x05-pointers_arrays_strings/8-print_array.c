@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * point_array - This function prints n elements of
+ * print_array - This function prints n elements of
  * an array, followed by a new line.
  *
  * @a: A is the array to be used
@@ -12,8 +12,10 @@
 void print_array(int *a, int n)
 {
 	int i;
-	for (i = 0; i < n; i++)
+
+	for (i = 0; i < n - 1; i++)
 	{
-		printf("%i, \n", a[i]);
+		printf("%i,", a[i]);
 	}
+	printf("%i \n", a[n]);
 }
