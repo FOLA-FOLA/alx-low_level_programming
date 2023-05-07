@@ -17,5 +17,5 @@ void print_array(int *a, int n)
 	{
 		printf("%i, ", a[i]);
 	}
-	printf("%i \n", a[n]);
+	printf("%i \n", a[n - 1]);
 }
