@@ -13,5 +13,5 @@
  */
 void prtprgnm(int argc, char *argv[0])
 {
-	puts( argv[0]);
+	printf("%s\n" argv[0]);
 }
