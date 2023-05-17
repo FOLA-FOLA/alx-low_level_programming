@@ -9,7 +9,8 @@
  *
  * Return: void
  */
-void prtcount(int argc)
+int prtcount(int argc)
 {
 	printf("%i\n", argc);
+	return (0);
 }
