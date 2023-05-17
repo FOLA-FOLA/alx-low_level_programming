@@ -6,6 +6,7 @@
  * arguments that a function has
  *
  * @argc: This is the number to be printed.
+ * @argv: This is the argument(s) in the function.
  *
  * Return: void
  */
