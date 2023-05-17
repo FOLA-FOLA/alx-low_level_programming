@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - This function prints the number of 
+ * main - This function prints the number of
  * arguments that a function has
  *
  * @argc: This is the number to be printed.
@@ -12,6 +12,6 @@
 int main(int argc, char **argv)
 {
 	(void)argv;
-	printf("%i\n", argc);
+	printf("%i\n", argc - 1);
 	return (0);
 }
