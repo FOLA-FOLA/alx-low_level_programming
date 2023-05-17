@@ -11,19 +11,23 @@
 char *_strdup(char *str)
 {
 	char *srn;
-	char *a;
-	int len;
+	int i, len = 0;
 
+	if (str == NULL)
+		return (NULL);
 	while (str[len] != '\0')
 	{
 		len += 1;
 	}
 	srn = (char *)malloc((sizeof(char) * len) + 1);
-	a = srn;
-	while (*str)
+
+	if (srn == NULL)
+		return (NULL);
+
+	for (i = 0; i < len; i++)
 	{
-		*a++ = *srn++;
+		srn[i] = str[i];
 	}
-	*a = '\0';
+	srn[len] = '\0';
 	return (srn);
 }
