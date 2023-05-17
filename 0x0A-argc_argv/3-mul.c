@@ -12,8 +12,7 @@
  */
 int main(int argc, char **argv)
 {
-	int o = atoi(argv[1]);
-	int l = atoi(argv[2]);
+	int o, l;
 
 	if (argc < 3)
 	{
@@ -22,6 +21,8 @@ int main(int argc, char **argv)
 	}
 	else
 	{
+		o = atoi(argv[1]);
+		l = atoi(argv[2]);
 		printf("%i\n", o * l);
 		return (0);
 	}
