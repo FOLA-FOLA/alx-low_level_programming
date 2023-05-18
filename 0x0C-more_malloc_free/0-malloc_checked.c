@@ -5,7 +5,9 @@
  * malloc_checked - cAllocated memory using
  * malloc and returns a pointer to the allocated space.
  *
- * Return: zero
+ * @b: The int which is to be allocated.
+ *
+ * Return: zero.
  */
 void *malloc_checked(unsigned int b)
 {
@@ -13,7 +15,7 @@ void *malloc_checked(unsigned int b)
 
 	if (a == NULL)
 	{
-		exit (98);
+		exit(98);
 	}
 	return (a);
 }
