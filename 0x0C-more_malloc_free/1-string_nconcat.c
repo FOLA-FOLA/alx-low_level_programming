@@ -40,19 +40,25 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (s1 == NULL)
 		s1 = "";
+	
 	if (s2 == NULL)
 		s2 = "";
 	le = lenstr(s2);
+	
 	if (n >= le)
 		n = le;
 	len = lenstr(s1);
+
+	a = malloc(sizeof(*a) * (len + n + 1));
+	
+	if (a == NULL)
+		return (NULL);
+	
 	for (i = 0; s2[i] != '\0' && i < n; i++)
 	{
 		s1[len + i] = s2[i];
 	}
-	s1[len + i] = '\0';
-	a = malloc(sizeof(*a) * (len + n + 1));
-	if (a == NULL)
-		return (NULL);
+	s1[len + 1] = '\0';
+
 	return (a);
 }
