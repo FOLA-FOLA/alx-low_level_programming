@@ -8,9 +8,9 @@
  *
  * Return: An int.
  */
-int lenstr(char *s)
+unsigned int lenstr(char *s)
 {
-	int a;
+	unsigned int a;
 
 	while (s[a] != '\0')
 	{
@@ -34,7 +34,7 @@ int lenstr(char *s)
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int len = 0;
+	int len;
 	unsigned int i, le;
 	char *a;
 
@@ -43,11 +43,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (s2 == NULL)
 		s2 = "";
-	le = lenstr(s2);
+	le = n;
 
-	if (n >= le)
-		n = le;
-	len = lenstr(s1) + n + 1;
+	if (n >= lenstr(s2))
+		le = lenstr(s2);
+	len = lenstr(s1) + le + 1;
 
 	a = malloc(sizeof(*a) * len);
 	if (a == NULL)
