@@ -34,7 +34,7 @@ unsigned int lenstr(char *s)
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int len, i, le;
+	int b, len, i, le;
 	char *a;
 
 	if (s1 == NULL)
@@ -55,11 +55,15 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (a == NULL)
 		return (NULL);
 
-	for (i = 0; s2[i] != '\0' && i < le; i++)
+	for (i = 0; s1[i] != '\0'; i++)
 	{
-		s1[len + i] = s2[i];
+		a[i] = s1[i];
 	}
-	s1[len + 1] = '\0';
+	for (b = 0; b < le; b++)
+	{
+		a[i + b] = s2[b];
+	}
+	s1[i + b] = '\0';
 
 	return (a);
 }
