@@ -34,8 +34,7 @@ unsigned int lenstr(char *s)
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int len;
-	unsigned int i, le;
+	int len, i, le;
 	char *a;
 
 	if (s1 == NULL)
@@ -44,16 +43,19 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 		s2 = "";
 	le = n;
+	if (le < 0)
+		return (NULL);
 
 	if (n >= lenstr(s2))
 		le = lenstr(s2);
+
 	len = lenstr(s1) + le + 1;
 
-	a = malloc(sizeof(*a) * len);
+	a = malloc(sizeof(char) * len);
 	if (a == NULL)
 		return (NULL);
 
-	for (i = 0; s2[i] != '\0' && i < n; i++)
+	for (i = 0; s2[i] != '\0' && i < le; i++)
 	{
 		s1[len + i] = s2[i];
 	}
