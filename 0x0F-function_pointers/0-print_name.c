@@ -11,3 +11,7 @@ void print_name(char *name, void (*f)(char *))
 	if (f != NULL)
 		f(name);
 }
+int main(void)
+{
+	return (0);
+}
