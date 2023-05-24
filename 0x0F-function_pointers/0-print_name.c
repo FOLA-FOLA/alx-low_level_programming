@@ -12,12 +12,3 @@ void print_name(char *name, void (*f)(char *))
 	if (f != NULL)
 		f(name);
 }
-/**
- * main - This is just the main function
- *
- * Return: 0
- */
-int main(void)
-{
-	return (0);
-}
