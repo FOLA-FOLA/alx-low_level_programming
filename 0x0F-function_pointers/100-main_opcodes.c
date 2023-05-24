@@ -4,8 +4,8 @@
 /**
  * main - This function prints its own opcodes
  *
- * @argc - argument count (num of.)
- * @argv - index of argument
+ * @argc: argument count (num of.)
+ * @argv: index of argument
  *
  * Return: Pointer to opcode
  */
@@ -17,17 +17,17 @@ int main(int argc, char **argv)
 	if (argc < 2)
 	{
 		printf("Error\n");
-		exit (1);
+		exit(1);
 	}
 	byt = atoi(argv[1]);
 	if (byt < 0)
 	{
 		printf("Error\n");
-		exit (2);
+		exit(2);
 	}
-	for (i = 0; i < byt; i +=1)
+	for (i = 0; i < byt; i += 1)
 	{
-		printf("%02x", p[i] &0xFF);
+		printf("%02x", p[i] & 0xFF);
 		if (i != byt - 1)
 		{
 			printf(" ");
