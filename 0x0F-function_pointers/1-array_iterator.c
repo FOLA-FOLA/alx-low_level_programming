@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "main.h"
 /**
  * array_iterator - This function executes a function
  * given as a parameter on each element of an array.
@@ -10,7 +11,7 @@
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	int i;
+	size_t i;
 
 	if (array != NULL && action != NULL)
 	{
@@ -19,4 +20,10 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 			action(*array);
 		}
 	}
+	else
+		return;
+}
+int main(void)
+{
+	return (0);
 }
