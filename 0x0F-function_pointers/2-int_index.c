@@ -25,12 +25,3 @@ int int_index(int *array, int size, int(*cmp)(int))
 	}
 	return (-1);
 }
-/**
- * main - This is a main function
- *
- * Return: 0
- */
-int main(void)
-{
-	return (0);
-}
