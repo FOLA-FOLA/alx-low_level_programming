@@ -23,12 +23,3 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 	else
 		return;
 }
-/**
- * main - This is the main function
- *
- * Return: void
- */
-int main(void)
-{
-	return (0);
-}
