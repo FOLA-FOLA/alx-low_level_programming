@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
+#include "function_pointers.h"
 /**
  * array_iterator - This function executes a function
  * given as a parameter on each element of an array.
@@ -23,6 +23,11 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 	else
 		return;
 }
+/**
+ * main - This is the main function
+ *
+ * Return: void
+ */
 int main(void)
 {
 	return (0);
