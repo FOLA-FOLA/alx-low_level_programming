@@ -19,7 +19,7 @@ int sum_them_all(const unsigned int n, ...)
 
 	va_start(p, n);
 
-	for (i = 0; i < n - 1; i++)
+	for (i = 0; i < n; i++)
 	{
 		sum_of_args += va_arg(p, int);
 	}
