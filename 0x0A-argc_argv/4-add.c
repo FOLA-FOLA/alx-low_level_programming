@@ -3,9 +3,9 @@
 #include <stdlib.h>
 #include <ctype.h>
 /**
- * This function adds positive numbers.
+ * main - This function adds positive numbers.
  *
- * @argc - This is the no. of arguments passed.
+ * @argc: This is the no. of arguments passed.
  * @argv: These are the arguments themselves.
  *
  * Return: An int / Zero.
@@ -24,7 +24,6 @@ int main(int argc, char **argv)
 		{
 			printf("Error");
 			return (1);
-			break;
 		}
 		else
 			sum += *(argv[i]);
