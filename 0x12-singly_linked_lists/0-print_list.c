@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * print_list - This function prints 
+ * print_list - This function prints
  * the content of a linked list.
  *
  * @h: The pointer to list's head
@@ -17,7 +17,7 @@ size_t print_list(const list_t *h)
 	if (h == NULL)
 		printf("[0] (nil)\n");
 
-	while(p != NULL)
+	while (p != NULL)
 	{
 		if (p->str == NULL)
 		{
