@@ -2,14 +2,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * _str_concat - This function concats two strings.
+ * str_concat - This function concats two strings.
  *
  * @s1: First string to be concatenated
  * @s2: Second string to be concatenated
  *
  * Return: A char (The new string)
  */
-char *_str_concat(char *s1, char *s2)
+char *str_concat(char *s1, char *s2)
 {
 	int i, len = 0;
 
