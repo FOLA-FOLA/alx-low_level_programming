@@ -28,5 +28,11 @@ char *str_concat(char *s1, char *s2)
 
 	a = s1;
 
+	if (s1 == NULL)
+	{
+		free(a);
+		return (NULL);
+	}
+
 	return (a);
 }
