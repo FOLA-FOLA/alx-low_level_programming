@@ -10,5 +10,8 @@
  */
 void free_grid(int **grid, int height)
 {
-	free(**a);
+	int **p;
+
+	p = alloc_grid(**grid, height);
+	free(p);
 }
