@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * freelistint - This function frees a list
+ * free_listint - This function frees a list
  *
  * @head: This is the head node of the list.
  *
@@ -9,12 +9,17 @@
  */
 void free_listint(listint_t *head)
 {
-	listint_t *p;
+	listint_t *p = head;
+
+	if (p == NULL || head == NULL)
+	{
+		return;
+	}
 
 	if (head->next != NULL)
 	{
 		p = head;
-		p = head->next;
+		head = head->next;
 		free(p);
 	}
 	free(head);
