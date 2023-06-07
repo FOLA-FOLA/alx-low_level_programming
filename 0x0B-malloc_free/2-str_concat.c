@@ -4,8 +4,7 @@
 /**
  * length - Finds string length.
  *
- * @s1: string 1
- * @s2: string 2
+ * @s: string whose length is to be found.
  *
  * Return Integer (String length)
  */
