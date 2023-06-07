@@ -12,22 +12,24 @@
  */
 int main(int argc, char **argv)
 {
-	int i, sum = 0;
+	int i, a, sum = 0;
+	char *flag;
 
-	if (argc < 1)
+	if (argc < 2)
 	{
 		printf("0\n");
 		return (0);
 	}
-	for (i = 0; i < argc; i++)
+	for (i = 1; argv[i]; i++)
 	{
-		if (isdigit(argv[i]) != 0)
+		a = strtol(argv[i], &flag, 10);
+		if (*flag)
 		{
 			printf("Error");
 			return (1);
 		}
 		else
-			sum += *argv[i];
+			sum += a;
 	}
 	printf("%i\n", sum);
 	return (0);
