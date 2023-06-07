@@ -6,7 +6,7 @@
  *
  * @s: string whose length is to be found.
  *
- * Return Integer (String length)
+ * Return: Integer (String length)
  */
 int length(char *s)
 {
