@@ -9,7 +9,7 @@
  *
  * Return: int.
  */
-int main (int argc, char **argv)
+int main(int argc, char **argv)
 {
 	int ttl, cnt;
 	unsigned int a;
@@ -29,12 +29,12 @@ int main (int argc, char **argv)
 	{
 		while (ttl > 1)
 		{
-			for (a = 0; a < sizeof(cents[a]); 1++)
+			for (a = 0; a < sizeof(cent[a]); a++)
 			{
-				if (ttl > cents[a])
+				if (ttl > cent[a])
 				{
-					cnt += ttl / cents[a];
-					ttl = ttl % cents[a];
+					cnt += ttl / cent[a];
+					ttl = ttl % cent[a];
 				}
 			}
 		}
