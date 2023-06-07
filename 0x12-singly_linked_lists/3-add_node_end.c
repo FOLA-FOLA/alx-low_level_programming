@@ -3,7 +3,7 @@
  * _strlen - This function obtains the
  * length of a string.
  *
- * @str: The string whose length is to be found.
+ * @s: The string whose length is to be found.
  *
  * Return: Length.
  */
@@ -37,7 +37,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	add = malloc(sizeof(list_t));
 	if (add == NULL)
 		return (NULL);
-	add->str =strdup(str);
+	add->str = strdup(str);
 
 	if (add->str == NULL)
 	{
