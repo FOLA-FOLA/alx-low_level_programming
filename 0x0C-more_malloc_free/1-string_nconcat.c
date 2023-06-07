@@ -2,23 +2,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * lenstr - Return the length of a string.
- *
- * @s: The string to be indexed.
- *
- * Return: An int.
- */
-unsigned int lenstr(char *s)
-{
-	unsigned int a;
-
-	while (s[a] != '\0')
-	{
-		a++;
-	}
-	return (a);
-}
-/**
  * string_nconcat - This function concatenates two
  * string and returns a pointer to
  * the allocated space in memory.
@@ -34,36 +17,29 @@ unsigned int lenstr(char *s)
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int b, len, i, le;
+	unsigned int b, l, i;
 	char *a;
 
 	if (s1 == NULL)
-		s1 = "";
-
+		b = 0;
+	else
+		for (b = 0; s1[b]; ++b)
+			;
 	if (s2 == NULL)
-		s2 = "";
-	le = n;
-	if (le < 0)
-		return (NULL);
-
-	if (n >= lenstr(s2))
-		le = lenstr(s2);
-
-	len = lenstr(s1) + le + 1;
-
-	a = malloc(sizeof(*a) * len);
+		l = 0;
+	else
+		for (i = 0; s2[l]; ++l)
+			;
+	if (l > n)
+		l = n;
+	a = malloc(sizeof(char) * (b + l + 1));
 	if (a == NULL)
 		return (NULL);
-
-	for (i = 0; s1[i] != '\0'; i++)
-	{
+	for (i = 0; i < b; i++)
 		a[i] = s1[i];
-	}
-	for (b = 0; b < le; b++)
-	{
-		a[i + b] = s2[b];
-	}
-	s1[i + b] = '\0';
+	for (i = 0; i < l; i++)
+		a[i + b] = s2[i];
+	a[b + l] = '\0';
 
 	return (a);
 }
