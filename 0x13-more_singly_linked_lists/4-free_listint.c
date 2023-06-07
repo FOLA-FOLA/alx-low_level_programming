@@ -9,14 +9,13 @@
  */
 void free_listint(listint_t *head)
 {
-	if (head == NULL)
+	listint_t *p;
+
+	if (head->next != NULL)
 	{
-		return (NULL);
-	}
-	if (head->link != NULL)
-	{
+		p = head->next;
 		free(head);
-		head = head->link;
+		head = p;
 	}
 	free(head);
 
