@@ -3,10 +3,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * get_op_func - This function selects the 
- * right operator/operator function to be used
+ * get_op_func - This function selects the
+ * correct operator/operator function to be used
  *
- * @s -Operator to be passed by our user
+ * @s: Operator to be passed by our user
  * @int - operand 1
  * @int - operand 2
  *
