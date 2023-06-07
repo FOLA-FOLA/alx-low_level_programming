@@ -1,12 +1,14 @@
 #include "main.h"
 
 /**
- * argstostr - This function 
+ * argstostr - This function
  * concatenates all
  * its arguments.
  *
  * @ac: number of args.
  * @av: The args.
+ *
+ * Return: String. (The converted args.)
  */
 char *argstostr(int ac, char **av)
 {
