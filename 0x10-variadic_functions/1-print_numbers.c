@@ -19,7 +19,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	va_start(p, n);
 
-	if (separator != NULL)
+	if (separator == NULL)
 	{
 		separator = "";
 	}
@@ -30,4 +30,5 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			printf("%s", separator);
 	}
 	printf("\n");
+	va_end(p);
 }	
