@@ -2,7 +2,7 @@
 /**
  * ck - Check if number is prime.
  *
- * @a: An integer
+ * @c: An integer
  * @g: An integer
  *
  * Return: An integer
@@ -19,7 +19,7 @@ int ck(int c, int g)
 /**
  * is_prime_number - return if the number is prime.
  *
- * @n The number to be checked.
+ * @n: The number to be checked.
  *
  * Return: Integer.
  */
