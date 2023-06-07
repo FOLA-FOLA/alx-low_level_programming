@@ -13,7 +13,7 @@ int _strlen_recursion(char *s)
 	return (0);
 }
 /**
- * ck - Check if s is a palindrome.
+ * check - Check if s is a palindrome.
  *
  * @s: String.
  * @i: First index
@@ -28,7 +28,7 @@ int check(char *s, int i, int j)
 		if (i > j / 2)
 			return (1);
 		else
-			return (check(s, i + 1, j + 1));
+			return (check(s, i + 1, j - 1));
 	}
 	else
 		return (0);
