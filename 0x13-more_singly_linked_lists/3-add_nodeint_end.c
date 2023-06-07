@@ -4,7 +4,7 @@
  * to the end of the list.
  *
  * @head: The head node of the list.
- * @end: THe last node.
+ * @n: THe last node's data.
  *
  * Return: Pointer(to new node).
  */
@@ -19,7 +19,6 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	{
 		return (NULL);
 	}
-	
 	tp->n = n;
 	tp->next = NULL;
 
