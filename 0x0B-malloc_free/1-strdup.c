@@ -1,5 +1,5 @@
 #include "main.h"
-/*
+/**
  * _length - This function gets the length of a string
  *
  * @s: The string whose length is to be determined
@@ -16,7 +16,7 @@ int _length(char *s)
 	}
 	return (tmp);
 }
-/*
+/**
  * _strdup - This function duplicate a string
  *
  * @str: This is the string to be duplicated.
@@ -29,9 +29,9 @@ char *_strdup(char *str)
 
 	char *a = malloc((sizeof(char) * count));
 
-	if (_length(str) == 0 || a == 0)
+	if (count == 0 || a == 0 || str == NULL)
 	{
-		return (0);
+		return (NULL);
 	}
 
 	for (i = 0; i < count; i += 1)
