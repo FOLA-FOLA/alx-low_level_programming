@@ -1,5 +1,22 @@
 #include "main.h"
 /*
+ * _length - This function gets the length of a string
+ *
+ * @s: The string whose length is to be determined
+ *
+ * Return: The length of string (int)
+ */
+int _length(char *s)
+{
+	int tmp;
+
+	for (tmp = 0; s[tmp] != '\0'; tmp += 1)
+	{
+		;
+	}
+	return (tmp);
+}
+/*
  * _strdup - This function duplicate a string
  *
  * @str: This is the string to be duplicated.
@@ -8,24 +25,18 @@
  */
 char *_strdup(char *str)
 {
-	char *a;
-	char tmp, i;
+	int i, count = _length(str);
 
-	for (tmp = 0; str[tmp] != '\0'; tmp += 1)
+	char *a = malloc((sizeof(char) * count));
+
+	if (_length(str) == 0 || a == 0)
 	{
-		;
+		return (0);
 	}
 
-	*a = malloc((sizeof(char) * tmp));
-
-	if (tmp == 0 || a == 0)
+	for (i = 0; i < count; i += 1)
 	{
-		return (0)
-	}
-
-	for (i = 0; i < tmp; i += 1)
-	{
-		a[i] = str[i]
+		a[i] = str[i];
 	}
 	return (a);
 }
