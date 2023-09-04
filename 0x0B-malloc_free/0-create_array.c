@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * create_array - This function creates and initializes 
+ * create_array - This function creates and initializes
  * an array with a specific char
  *
  * @size: Size of array to be created.
@@ -20,5 +20,5 @@ char *create_array(unsigned int size, char c)
 	{
 		a[i] = c;
 	}
-	return (0);
+	return (a);
 }
